@@ -114,6 +114,8 @@ nav {
 }
 
 /* Hero Section */
+
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -171,6 +173,101 @@ nav {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
+
+
+
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    /* background: #DB2B39; */
+    color: #fff;
+    font-size: 22px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  }
+
+  .social-icons a{
+    text-decoration: none;
+  }
+
+  /* Specific Hover Effects */
+  .instagram:hover {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  }
+  
+  .twitter:hover {
+    background: #000;
+  }
+  
+  .github:hover {
+    background: #333;
+  }
+  
+  .reddit:hover {
+    background: #ff4500;
+  }
+  
+  /* Responsive for Mobile */
+  @media (max-width: 768px) {
+    .social-icons {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+    }
+    .instagram {
+        background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+      }
+      
+      .twitter {
+        background: #000;
+      }
+      
+      .github {
+        background: #333;
+      }
+      
+      .reddit{
+        background: #ff4500;
+      }
+
+      .social-icon:hover {
+        transform: scale(1.2);
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+      }
+
+  }
+  
+
+
+
+
+
+
+
 
 /* About Section */
 .about {
